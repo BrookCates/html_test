@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그</title>
+</head>
+<body>
+   <h1> 폼테그 </h1>
+    
+   <fieldset style="width:500px;" > 
+    <legend>회원가입</legend>  
+    <table border="1">
+        <tr>
+            <td>아이디</td>
+            <td><input type="text" name="id" placeholder="아이디"></td>
+        </tr>
+        <tr>
+            <td>비밀번호</td>
+            <td> <input type="password" name="pwd"  placeholder ="15자까지 입력가능합니다"></td>
+        </tr>
+        <tr>
+            <td>첨부파일</td>
+            <td><input type="file" name="file"></td>
+        </tr> <tr>
+            <td>라디오(한가지만 선택)</td>
+            <td>
+                <label><input type="radio" name="gender" value="male" checked>남자</label>
+                <label><input type="radio" name="gender" value="female">여자</label>
+            </td>
+        </tr>
+        <tr>
+            <td>체크박스(다중선택가능) </td>
+            <td> 
+                <label><input type="checkbox" name="xxx"  value="webtoon" checked >웹툰</label>
+                <label><input type="checkbox" name="yyy"  value="soapopera">드라마</label>
+                <label><input type="checkbox" name="zzz"  value="movie">영화</label>
+            </td>
+        </tr>
+        <tr>
+            <td>버튼</td>
+            <td>
+                <button>확인</button>
+                <button>확인</button>
+                <button>취소</button>
+                <button>취소</button>
+                <button>다음</button>
+                <button>이전</button>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+
+     
+<fieldset style="width:500px;"> 
+    <legend>여러 줄의 글상자</legend>  
+    <textarea name="comment" placeholder="하고 싶은 말을 남겨주세요" rows="14" cols="50"></textarea>
+
+</fieldset>
+
+</body>
+</html>
