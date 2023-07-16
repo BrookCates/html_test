@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            display: grid;
+            grid-template-columns: 20% 40% 40%;
+            grid-template-rows: 100px 300px 250px 100px;
+            width: 70%;
+            margin : auto;
+        }
+        .wrap div{
+            margin: 2px;
+        }
+        .grid11{
+            grid-column-start: 1 ;
+            grid-column-end: 4;
+            background-color: aqua;
+        }
+        .grid21{
+            grid-column-start: 1 ;
+            grid-column-end: 2;  
+            background-color:blueviolet;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            line-height:550px;
+        }
+        .grid22{
+            grid-column-start: 2 ;
+            grid-column-end: 3;
+            background-color: bisque;
+        }
+        .grid23{
+            grid-column-start: 3 ;
+            grid-column-end: 4; 
+            background-color: rgb(218, 224, 196);
+            font-size: 15px;  
+            padding: 10px;
+        }
+        .grid32{
+            grid-column-start: 2 ;
+            grid-column-end: 3;
+            background-color:burlywood; 
+            text-align: center;
+            line-height: 100 px;
+           
+        }
+        .grid33{
+            grid-column-start: 3 ;
+            grid-column-end: 4; 
+            background-color: bisque;  
+        }
+        .grid41{
+            grid-column-start: 1 ;
+            grid-column-end: 4;
+            background-color: chartreuse;  
+        } 
+        @media (max-width: 1300px) {
+            .wrap {
+                width: 90%;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <!-- 3 x 4 Grid인경우-->
+    <div class="wrap">
+        <div class="grid11">Grid11</div> <!-- 첫째 열은 한칸만 만들 예정-->
+        <div class="grid21"> <!--Grid21 -->
+            <img src="./CarrierReceipt.jpg" width="150px">
+        </div> <!-- 2열 1번째-->
+        <div class="grid22">
+            <!--Grid22<br> -->         
+            <fieldset  style="width:500px;"> <!-- 외부테두리 -->
+                <legend>회원가입</legend>  <!-- 외부테두리의 제목-->
+                <table border="5">
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>32</td>
+                        <td>33</td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div> <!-- 2열 2번째-->
+        <div class="grid23">
+            <p>(서울·바르샤바=뉴스1) 최동현 기자 </p>= 윤석열 대통령은 16일(현지시간)
+             집중호우로 희생된 피해자들과 유가족을 위로하고 일부 지역에서 사전 통제가 
+             이루어지지 않은 점을 지적했다. 윤 대통령은 귀국 즉시 중대본 회의를 직접
+              주재할 예정이다.
+        </div> <!-- 2열 3번째-->
+        <div class="grid32">Grid32</div> <!-- 3열 1번째-->
+        <div class="grid33">Grid33</div> <!-- 3열 2번째-->
+        <div class="grid41">Grid11</div> <!-- 2열 3번째-->
+    </div>
+</body>
+</html>
