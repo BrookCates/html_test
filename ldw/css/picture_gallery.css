@@ -1,0 +1,25 @@
+.bgcolor1{
+    background-color:#aaaaaa
+}
+.bgcolor2{
+    background-color:#cccccc
+}
+.picture_gallery_frame{
+    width: 400px;
+    height :450px;   
+}
+.picture_in_gallery{
+    height : 400px
+}
+.text_in_gallery{
+    height: 50px;
+}
+.image1_gallery{
+
+}
+.image2_gallery{
+    display: none;        
+}
+.image3_gallery{
+    display: none;    
+}
