@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel='stylesheet' href='./css/flex_table.css'>
+    <script src="./js/flex_table.js"></script>
 </head>
 <body>
     <div class='flex_container bgcolor1'>
@@ -13,8 +14,8 @@
         <div class='writer_headline'>이름</div>
         <div class='date_headline'>날자</div>
         <div class='view_headline'>조회수</div>
-        <div class='modify_headline'><button>수정</button></div>
-        <div class='delete_headline'><button>삭제</button></div>
+        <div class='modify_headline' ><button id="mod1" onclick="onModify(event)">수정</button></div>
+        <div class='delete_headline' ><button id="del1" onclick="onDelete(event)">삭제</button></div>
     </div>
     <div class='flex_container bgcolor2'>
         <div class='id'>32</div>
@@ -22,8 +23,8 @@
         <div class='writer'>이동욱</div>
         <div class='date'>2007-06-01</div>
         <div class='view'>87</div>
-        <div class='modify'><button>수정</button></div>
-        <div class='delete'><button>삭제</button></div>
+        <div class='modify'><button id="mod2" onclick="onModify(event)">수정</button></div>
+        <div class='delete'><button id="del2" onclick="onDelete(event)">삭제</button></div>
     </div>
     <div class='flex_container bgcolor2'>
         <div class='id'>댓글</div>
@@ -31,8 +32,8 @@
         <div class='writer'>이동욱</div>
         <div class='date'>2007-06-01</div>
         <div class='view'>1187</div>
-        <div class='modify'><button>수정</button></div>
-        <div class='delete'><button>삭제</button></div>
+        <div class='modify'><button id="mod3" onclick="onModify(event)">수정</button></div>
+        <div class='delete'><button id="del3" onclick="onDelete(event)">삭제</button></div>
     </div>
 </body>
 </html>

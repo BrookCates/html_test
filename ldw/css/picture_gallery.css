@@ -9,17 +9,21 @@
     height :450px;   
 }
 .picture_in_gallery{
-    height : 400px
+    height : 400px;
+    display: flex;
+    align-items: center;
 }
 .text_in_gallery{
     height: 50px;
 }
 .image1_gallery{
-
+    margin: 0 auto;
 }
 .image2_gallery{
-    display: none;        
+    display: none; 
+    margin: 0 auto;       
 }
 .image3_gallery{
-    display: none;    
+    display: none;  
+    margin: 0 auto;  
 }

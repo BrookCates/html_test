@@ -11,13 +11,13 @@ window.onload = () => {
         timeElasped ++
         // textArea.innerHTML = timeElasped 
         let visible = timeElasped % 3
-        console.log("visible = " + visible)
-        console.log( images[visible].style );
+        //console.log("visible = " + visible)
+        //console.log( images[visible].style );
         for(let i=0; i<3; i++ ){
             images[i].style.display = "none"
         }
-        images[visible].style.display = ""
-        console.log(images[visible])
+        images[visible].style.display = "block"
+        //console.log(images[visible])
 
    
     }, 2000)
