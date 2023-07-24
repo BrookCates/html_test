@@ -1,0 +1,84 @@
+.bgcolor1{
+    background-color:#aaaaaa
+}
+.bgcolor2{
+    background-color:#cccccc
+}
+.flex_container{
+    margin : 0 auto;
+    width: 400px;
+    display: flex;
+    height : 30px;
+    margin-bottom: 3px;
+}
+.id{
+    flex : 0 0 40px;
+    /* background-color: red; */
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+}
+.content{
+    flex : 0 0 160px;
+    /* background-color: rgb(17, 0, 255); */
+    text-align: left;
+    line-height: 30px;
+    margin-right: 2px;
+}
+.writer{
+    flex : 0 0 50px;
+    /* background-color: rgb(143, 199, 199); */
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+}
+.date{
+    flex : 0 0 90px;
+    /* background-color: rgb(190, 230, 230); */
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+}
+.view{
+    flex : 0 0 40px;
+    /* background-color: rgb(190, 230, 211); */
+    text-align: right;
+    line-height: 30px;   
+    margin-right: 2px;
+}
+.id_headline{
+    flex : 0 0 40px;
+    /* background-color: #cccccc;  */
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+}
+.content_headline{
+    flex : 0 0 160px;
+    /* background-color: #cccccc;  */
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+}
+.writer_headline{
+    flex : 0 0 50px;
+    /* background-color: #cccccc;  */
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+}
+.date_headline{
+    flex : 0 0 90px;
+    /* background-color: #cccccc;  */
+    text-align: center;
+    line-height: 30px;
+    margin-right: 2px;
+}
+.view_headline{
+    flex : 0 0 40px;
+    /* background-color: #cccccc;  */
+    text-align: center;
+    line-height: 30px;   
+    margin-right: 2px;
+}
+
