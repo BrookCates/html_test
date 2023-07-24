@@ -8,32 +8,40 @@
     <script src="./js/flex_table.js"></script>
 </head>
 <body>
-    <div class='flex_container bgcolor1'>
-        <div class='id_headline'>id</div>
-        <div class='content_headline'>내용</div>
-        <div class='writer_headline'>이름</div>
-        <div class='date_headline'>날자</div>
-        <div class='view_headline'>조회수</div>
-        <div class='modify_headline' ><button id="mod1" onclick="onModify(event)">수정</button></div>
-        <div class='delete_headline' ><button id="del1" onclick="onDelete(event)">삭제</button></div>
-    </div>
-    <div class='flex_container bgcolor2'>
-        <div class='id'>32</div>
-        <div class='content'>멍청한 놈이 먼저 일어나는 곳</div>
-        <div class='writer'>이동욱</div>
-        <div class='date'>2007-06-01</div>
-        <div class='view'>87</div>
-        <div class='modify'><button id="mod2" onclick="onModify(event)">수정</button></div>
-        <div class='delete'><button id="del2" onclick="onDelete(event)">삭제</button></div>
-    </div>
-    <div class='flex_container bgcolor2'>
-        <div class='id'>댓글</div>
-        <div class='content'>멍청한 놈이 먼저 일어나는 곳</div>
-        <div class='writer'>이동욱</div>
-        <div class='date'>2007-06-01</div>
-        <div class='view'>1187</div>
-        <div class='modify'><button id="mod3" onclick="onModify(event)">수정</button></div>
-        <div class='delete'><button id="del3" onclick="onDelete(event)">삭제</button></div>
-    </div>
+    <div class="container">
+         <div class='flex_container bgcolor1'>
+            <div class='id_headline'>id</div>
+            <div class='content_headline'>내용</div>
+            <div class='writer_headline'>이름</div>
+            <div class='date_headline'>날자</div>
+            <div class='view_headline'>조회수</div>
+            <div class='modify_headline' ><button id="mod1" onclick="onModify(event)">수정</button></div>
+            <div class='delete_headline' ><button id="del1" onclick="onDelete(event)">삭제</button></div>
+        </div>
+        <div class='flex_container bgcolor2'>
+            <div class='id'>32</div>
+            <div class='content'>멍청한 놈이 먼저 일어나는 곳</div>
+            <div class='writer'>이동욱</div>
+            <div class='date'>2007-06-01</div>
+            <div class='view'>87</div>
+            <div class='modify'><button id="mod2" onclick="onModify(event)">수정</button></div>
+            <div class='delete'><button id="del2" onclick="onDelete(event)">삭제</button></div>
+        </div>
+        <div class='flex_container bgcolor2'>
+            <div class='id'>댓글</div>
+            <div class='content'>멍청한 놈이 먼저 일어나는 곳</div>
+            <div class='writer'>이동욱</div>
+            <div class='date'>2007-06-01</div>
+            <div class='view'>1187</div>
+            <div class='modify'><button id="mod3" onclick="onModify(event)">수정</button></div>
+            <div class='delete'><button id="del3" onclick="onDelete(event)">삭제</button></div>
+        </div>
+        <div class="modal_dlg_bg" id="modal_dlg_bg">
+            <div class="modal_dlg_form" id="modal_dlg_form">
+                <p>확인이나 취소 누르세요</p>
+                <button onclick="on_modal_ok(event)">확인</button><button onclick="on_modal_cancel(event)">취소</button>
+            </div>
+        </div>
+    </div>   
 </body>
 </html>
