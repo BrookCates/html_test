@@ -161,6 +161,9 @@
     flex : 0 1 100px;
     /* background-color: rgb(190, 230, 211); */
 }
+.menu6{
+    flex : 0 1 100px;    
+}
 .footer_area{
     margin : 0 auto;
     width: 900px;
