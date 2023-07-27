@@ -1,0 +1,81 @@
+.myBody{
+    margin: 0;
+    padding: 0;
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+.myFormContainer{
+    width: 400px;
+    margin : 0 auto;
+}
+.myFormHeader{
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+    text-align: center;
+    margin-top : 100px;
+    font-size : 30px;
+    height: 40px;
+    background-color: #dddddd;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    line-height: 40px;
+}
+.myFormMain{
+    width : 100%;
+    background-color: #cccccc;
+}
+.myFormGeneral{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.myControlDiv{
+    flex : 1 1 auto;
+    display : flex;
+    align-items: center;
+    height: 40px;
+}
+.mylabelSpan{
+    flex: 1 1 30%;
+    font-size: 20px;
+    line-height: 40px;   
+    text-align: center;
+    padding : 5px;
+}
+.myInputSpan{
+    flex: 1 1 70%;
+    display : flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 40px;
+    padding : 5px
+}
+.myInput{
+    flex :1 1 auto;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    padding: 5px;
+    border-radius: 5%;
+}
+.myButtonSpan{
+    flex: 1 1 auto;
+    line-height: 40px;
+    text-align: center; 
+    padding :10px; 
+
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+.myBtnSubmit{
+    font-size: 20px;  
+}
+.myFormFooter{
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+    text-align: right;
+    margin-bottom : 10px;
+    font-size : 12px;
+    height: 15px;
+    background-color: #dddddd;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    line-height: 15px;   
+}
