@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 920px;
+            background-color: #dddddd;
+            height: auto;
+            margin : 0 auto;
+            margin-top : 20px;
+        }
+        .gallery_flex_container{
+            width: 100%;
+            height: auto;
+        }
+        .gallery_table{
+            border: 1;
+        }
+        .gallery_cell{
+            width: 230px;
+            height: 230px;
+            grid-template-columns: 100%;
+            grid-template-rows: 200px 30px;
+        }
+        .gallery_cell_container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 200px 30px;    
+        }
+        .gallery_cell_picture{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: bisque;
+        }
+        .gallery_cell_legend{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: aqua;
+        }
+        .gallery_myFormContainer{
+            width: 920px;
+            margin : 0 auto;
+        }
+        .gallery_myFormHeader{
+            font-family: Dotum,'돋움',Helvetica,sans-serif;
+            text-align: center;
+            margin-top : 100px;
+            font-size : 30px;
+            height: 40px;
+            background-color: #dddddd;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            line-height: 40px;
+        }
+        .gallery_myFormMain{
+            width : 100%;
+            background-color: #cccccc;
+        }
+        .gallery_myFormGeneral{
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+        .gallery_myControlDiv{
+            flex : 1 1 auto;
+            display : flex;
+            align-items: center;
+            height: 40px;
+        }
+        .gallery_mylabelSpan{
+            flex: 1 1 30%;
+            font-size: 20px;
+            line-height: 40px;   
+            text-align: center;
+            padding : 5px;
+        }
+        .gallery_myInputSpan{
+            flex: 1 1 70%;
+            display : flex;
+            align-items: center;
+            font-size: 20px;
+            line-height: 40px;
+            padding : 5px
+        }
+        .gallery_myInput{
+            flex :1 1 auto;
+            box-sizing: border-box; /* Ensure padding is included in the width */
+            padding: 5px;
+            border-radius: 5%;
+        }
+        .gallery_myButtonSpan{
+            flex: 1 1 auto;
+            line-height: 40px;
+            text-align: center; 
+            padding :10px; 
+        
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+        }
+        .gallery_myBtnSubmit{
+            font-size: 15px;  
+        }
+        .gallery_myFormFooter{
+            font-family: Dotum,'돋움',Helvetica,sans-serif;
+            text-align: right;
+            margin-bottom : 10px;
+            font-size : 12px;
+            height: 15px;
+            background-color: #dddddd;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            line-height: 15px;   
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="gallery_myFormContainer">
+            <div class="gallery_myFormHeader">
+                갤러리 사진 올리기
+            </div>
+            <div class="gallery_myFormMain">
+                <form action="#" class="gallery_myFormGeneral">
+                    <div class="gallery_myControlDiv">
+                        <span class="gallery_mylabelSpan" for="input1">업로드 할 파일 선택</span>
+                        <span class="gallery_myInputSpan">
+                            <input class="myInput" type="file" name="name1" id="input1">
+                        </span>
+                        <span class="gallery_myButtonSpan">
+                            <input class="gallery_myBtnSubmit" type="submit" name="btnSubmit" id="btnSubmit" value="이미지 올리기">
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="gallery_myFormFooter">
+                upload file
+            </div>
+        </div>
+        <div class="gallery_flex_container">
+
+        </div>
+        <div class="gallery_flex_container">
+            <table class="gallery_table">
+                <tbody>
+                    <tr class="tr_cell">
+                        <td class="gallery_cell">
+                            <div class="gallery_cell_container">
+                                <div class="gallery_cell_picture"></div>
+                                <div class="gallery_cell_legend"></div>
+                            </div>
+                        </td>
+                        <td class="gallery_cell">
+                            <div class="gallery_cell_container">
+                                <div class="gallery_cell_picture"></div>
+                                <div class="gallery_cell_legend"></div>
+                            </div>
+                        </td>
+                        <td class="gallery_cell">
+                            <div class="gallery_cell_container">
+                                <div class="gallery_cell_picture"></div>
+                                <div class="gallery_cell_legend"></div>
+                            </div>
+                        </td>
+                        <td class="gallery_cell">
+                            <div class="gallery_cell_container">
+                                <div class="gallery_cell_picture"></div>
+                                <div class="gallery_cell_legend"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tr_cell">
+                        <td class="gallery_cell">
+                            <div class="gallery_cell_container">
+                                <div class="gallery_cell_picture"></div>
+                                <div class="gallery_cell_legend"></div>
+                            </div>
+                        </td>
+                        <td class="gallery_cell">
+                            <div class="gallery_cell_container">
+                                <div class="gallery_cell_picture"></div>
+                                <div class="gallery_cell_legend"></div>
+                            </div>
+                        </td>
+                        <td class="gallery_cell">
+                            <div class="gallery_cell_container">
+                                <div class="gallery_cell_picture"></div>
+                                <div class="gallery_cell_legend"></div>
+                            </div>
+                        </td>
+                        <td class="gallery_cell">
+                            <div class="gallery_cell_container">
+                                <div class="gallery_cell_picture"></div>
+                                <div class="gallery_cell_legend"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>           
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>
